@@ -14,7 +14,7 @@ class Driver {
     console.log(this.id)
     console.log(
       store.trips.filter(function(driver){
-        return driver
+        console.log(driver)
       })
         // return store.trips.filter(function(this){
         //   return this

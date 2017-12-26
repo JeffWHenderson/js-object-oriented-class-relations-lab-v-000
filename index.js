@@ -30,11 +30,6 @@ class Trip {
 
   driver() {
     return store.drivers.find(function(driver){
-      return driver.id === this.driver.id
-    })
-    // return store.drivers.find(function(driver){
-    //   return driver.id === this.driverId
-    // })
-    //return driverId === this.driver.id
+      return driver.id === this.driverId
   }
 } // end of Trip Object

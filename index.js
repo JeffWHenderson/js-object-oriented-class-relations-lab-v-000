@@ -28,8 +28,9 @@ class Trip {
   }
 
   driver() {
-    return store.drivers.find(function(driverId){
-      return driver.id === this.driverId
-    })
+    console.log(10)
+    // return store.drivers.find(function(driverId){
+    //   return driver.id === this.driverId
+    // })
   }
 } // end of Trip Object

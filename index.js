@@ -29,6 +29,6 @@ class Trip {
   }
 
   driverId() {
-    
+    return driverId === this.driver.id
   }
 } // end of Trip Object

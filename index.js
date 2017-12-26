@@ -12,12 +12,9 @@ class Driver {
 
   trips() {
     //console.log(
-      store.trips.filter(function(driver){
-        driver === driver
+      return store.trips.filter(function(driver){
+        return this
       })
-        // return store.trips.filter(function(this){
-        //   return this
-        // })
 
   }
 }//end of driver objecct

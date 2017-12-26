@@ -19,7 +19,7 @@ class Driver {
 
   passengers() {
     return this.trips().filter(function(passenger){
-      console.log(passenger === passenger)
+      console.log(passenger)
     })
       //  return this.trips().filter(function(driver){
       //    return driver === driver

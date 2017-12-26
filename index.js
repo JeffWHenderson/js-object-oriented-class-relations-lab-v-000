@@ -1,4 +1,5 @@
 let store = { drivers: [], passengers: [], trips: [] }
+
 let driverId = 0
 let passengerId = 0
 let tripId = 0
@@ -13,46 +14,58 @@ class Driver {
 
   trips(){
     return store.trips.filter(trip => {
-      return trip.driverId == this.id;
-    });
+      return trip.driverId == this.id
+    })
   }
-  }//end of driver objecct
+
+  passengers(){
+    return this.trips().map(trip => {
+      return trip.passenger()
+    })
+  }
+
+}
 
 class Passenger {
+// many trips/ many drivers thru trips
   constructor(name) {
     this.id = ++passengerId
     this.name = name
     store.passengers.push(this)
-  }//end of constructor
+  }
 
-  trips() {
-      return store.trips.filter(function(passenger){
-        return passenger === passenger
-      })
+  trips(){
+    return store.trips.filter(trip => {
+      return trip.passengerId == this.id
+    })
   }
 
   drivers(){
     return this.trips().map(trip => {
-      return trip.driver();
-    });
+      return trip.driver()
+    })
   }
-}//end of passenger objecct
+}
 
 class Trip {
+// belongs to driver; belongs to passenger
   constructor(driver, passenger) {
     this.id = ++tripId
     this.driverId = driver.id
     this.passengerId = passenger.id
     store.trips.push(this)
   }
-  driver() {
-    return store.drivers.find(function(driverId){
-      return driverId
+
+  driver(){
+    return store.drivers.find(driver => {
+      return driver.id == this.driverId
     })
   }
-  passenger() {
-    return store.passengers.find(function(passengerId){
-      return passengerId
+
+  passenger(){
+    return store.passengers.find(passenger => {
+      return passenger.id == this.passengerId
     })
   }
-} // end of Trip Object
+
+}

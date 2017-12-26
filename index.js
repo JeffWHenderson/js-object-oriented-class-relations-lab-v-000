@@ -11,7 +11,7 @@ class Driver {
   }//end of constructor
 
   trips() {
-    console.log(this)
+    console.log(this.id)
     // return store.trips.filter(function(this){
     //   return this
     // })

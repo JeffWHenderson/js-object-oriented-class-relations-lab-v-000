@@ -35,7 +35,7 @@ class Trip {
 
   passenger() {
     return store.passengers.find(function(passengerId){
-      return passenger
+      return passengerId
     })
     // return store.passengers.find(function(passengerId){
     //   return passengerId

@@ -22,8 +22,7 @@ class Driver {          // many trips, many passengers thru trips
       return trip.passenger()
     })
   }
-
-}
+} // end of Driver object
 
 class Passenger { // many trips/ many drivers thru trips
   constructor(name) {
@@ -43,7 +42,7 @@ class Passenger { // many trips/ many drivers thru trips
       return trip.driver()
     })
   }
-}
+} // end of Passenger Object
 
 class Trip { // belongs to driver; belongs to passenger
   constructor(driver, passenger) {
@@ -64,5 +63,4 @@ class Trip { // belongs to driver; belongs to passenger
       return passenger.id == this.passengerId
     })
   }
-
-}
+} // end of trips object

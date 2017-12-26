@@ -19,9 +19,10 @@ class Driver {
 
   passengers() {
     //console.log(
-      return store.trips.filter(function(passenger){
-        return passenger === passenger
-      })
+    return this
+      // return store.trips.filter(function(passenger){
+      //   return passenger === passenger
+      // })
   }
 }//end of driver objecct
 

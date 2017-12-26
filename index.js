@@ -4,8 +4,7 @@ let driverId = 0
 let passengerId = 0
 let tripId = 0
 
-class Driver {
-// many trips, many passengers thru trips
+class Driver {          // many trips, many passengers thru trips
   constructor(name) {
     this.id = ++driverId
     this.name = name
@@ -26,8 +25,7 @@ class Driver {
 
 }
 
-class Passenger {
-// many trips/ many drivers thru trips
+class Passenger { // many trips/ many drivers thru trips
   constructor(name) {
     this.id = ++passengerId
     this.name = name
@@ -47,8 +45,7 @@ class Passenger {
   }
 }
 
-class Trip {
-// belongs to driver; belongs to passenger
+class Trip { // belongs to driver; belongs to passenger
   constructor(driver, passenger) {
     this.id = ++tripId
     this.driverId = driver.id

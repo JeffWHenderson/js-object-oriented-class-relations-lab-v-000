@@ -35,6 +35,12 @@ class Passenger {
         return passenger === passenger
       })
   }
+
+  drivers(){
+    return this.trips().map(trip => {
+      return trip.driver();
+    });
+  }
 }//end of passenger objecct
 
 class Trip {

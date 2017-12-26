@@ -15,11 +15,7 @@ class Driver {
         return driver === driver
       })
   }
-  passengers(){
-    return this.trips().map(function(trip) {
-      console.log(trip.passenger();)
-    })
-  }
+
 
 }//end of driver objecct
 

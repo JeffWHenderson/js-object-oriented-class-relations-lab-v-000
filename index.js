@@ -11,8 +11,8 @@ class Driver {
   }//end of constructor
 
   trips() {
-      return store.trips.filter(function(trip){
-        return trip.driverId === this.id
+      return store.trips.filter(function(driver){
+        return driver === driver
       })
   }
 

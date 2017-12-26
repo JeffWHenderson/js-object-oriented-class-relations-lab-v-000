@@ -18,8 +18,8 @@ class Driver {
   }
 
   passengers() {
-    return this.trips().filter(function(passenger){
-      return passenger
+    return this.trips().find(function(passenger){
+      return passenger === passenger
     })
       //  return this.trips().filter(function(driver){
       //    return driver === driver

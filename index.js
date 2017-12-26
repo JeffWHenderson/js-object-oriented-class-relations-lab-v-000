@@ -24,7 +24,7 @@ class Trip {
     this.id = ++tripId
     this.driver = driver
     this.passenger = passenger
-
+    this.passengerId = passenger.id
     store.trips.push(this)
   }
 

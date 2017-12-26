@@ -12,7 +12,7 @@ class Driver {
 
   trips() {
     return store.trips.filter(function(this){
-
+      return this
     })
   }
 }//end of driver objecct

@@ -22,17 +22,11 @@ class Passenger {
 class Trip {
   constructor(driver, passenger) {
     this.id = ++tripId
-    this.driver = driver
-    this.passenger = passenger
+    this.driverId = driver.id
+    //this.passenger = passenger
     this.passengerId = passenger.id
     store.trips.push(this)
   }
 
-  driverId() {
-    return function() {return 10}
-    // return store.drivers.find(function(driver){
-    //   return driver.id === this.driverId
-    // })
-    //return driverId === this.driver.id
-  }
+
 } // end of Trip Object

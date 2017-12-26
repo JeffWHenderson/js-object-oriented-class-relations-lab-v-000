@@ -28,7 +28,7 @@ class Trip {
   }
 
   driver() {
-    return 10
+    return store.drivers
     // return store.drivers.find(function(driverId){
     //   return driver.id === this.driverId
     // })

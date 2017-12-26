@@ -28,5 +28,13 @@ class Trip {
     store.trips.push(this)
   }
 
-
+  driver() {
+    return store.drivers.find(function(driver){
+      return this.driverId
+    })
+    // return store.drivers.find(function(driver){
+    //   return driver.id === this.driverId
+    // })
+    //return driverId === this.driver.id
+  }
 } // end of Trip Object

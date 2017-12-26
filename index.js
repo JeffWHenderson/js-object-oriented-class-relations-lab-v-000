@@ -20,7 +20,7 @@ class Driver {
   passengers() {
     //return this.trips()[0].passengerId
        return store.trips.filter(function(driver){
-         return passenger === passenger
+         return driver === driver
        })
   }
 }//end of driver objecct

@@ -19,7 +19,8 @@ class Driver {
 
   passengers() {
     this.trips().find(function(driver){
-      console.log(driver)
+      driver === driver
+      return passengerId
     })
     return this.trips().find(function(passenger){
       return passengerId === passengerId

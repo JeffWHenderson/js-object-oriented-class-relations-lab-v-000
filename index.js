@@ -13,7 +13,7 @@ class Driver {
   trips() {
     //console.log(
       return store.trips.filter(function(driver){
-        return this
+        return driver === driver
       })
 
   }

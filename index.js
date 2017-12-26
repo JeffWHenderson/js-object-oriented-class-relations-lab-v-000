@@ -24,7 +24,7 @@ class Driver {          // many trips, many passengers thru trips
   }
 } // end of Driver object
 
-class Passenger { // many trips/ many drivers thru trips
+class Passenger {          // many trips/ many drivers thru trips
   constructor(name) {
     this.id = ++passengerId
     this.name = name
@@ -44,7 +44,7 @@ class Passenger { // many trips/ many drivers thru trips
   }
 } // end of Passenger Object
 
-class Trip { // belongs to driver; belongs to passenger
+class Trip {              // belongs to driver; belongs to passenger
   constructor(driver, passenger) {
     this.id = ++tripId
     this.driverId = driver.id

@@ -19,7 +19,7 @@ class Driver {
 
   passengers() {
     console.log(
-    this.trips()
+    this.trips().first
       // return store.trips.filter(function(passenger){
       //   return passenger === passenger
       // })

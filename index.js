@@ -33,7 +33,7 @@ class Trip {
     })
   }
 
-  driver() {
+  passenger() {
     return store.passengers.find(function(passengerId){
       return passengerId
     })

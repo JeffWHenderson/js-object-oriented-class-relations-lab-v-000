@@ -18,10 +18,10 @@ class Driver {
   }
 
   passengers() {
-    return this.trips()[0].passengerId
-      // return store.trips.filter(function(passenger){
-      //   return passenger === passenger
-      // })
+    //return this.trips()[0].passengerId
+       return store.trips.filter(function(driver){
+         return passenger === passenger
+       })
   }
 }//end of driver objecct
 

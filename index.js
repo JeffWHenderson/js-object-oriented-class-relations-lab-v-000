@@ -10,15 +10,16 @@ class Driver {
     store.drivers.push(this)
   }//end of constructor
 
-  trips() {
-      return store.trips.filter(function(driver){
-        return driver === driver
-      })
+  trips(){
+    return store.trips.filter(trip => {
+      return trip.driverId == this.id;
+    });
   }
-  passengers() {
-    return this.trips().map(function(trip) {
-      console.log(trip.passenger())
-    })
+
+  passengers(){
+    return this.trips().map(trip => {
+      return trip.passenger();
+    });
   }
 
 }//end of driver objecct

@@ -15,10 +15,10 @@ class Driver {
         return driver === driver
       })
   }
-  passengers() {
+  passengers(){
     return this.trips().map(trip => {
-      return trip.passenger()
-    })
+      return trip.passenger();
+    });
   }
 
 }//end of driver objecct

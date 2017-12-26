@@ -15,7 +15,13 @@ class Driver {
       return store.trips.filter(function(driver){
         return driver === driver
       })
+  }
 
+  passengers() {
+    //console.log(
+      return store.trips.filter(function(passenger){
+        return passenger === passenger
+      })
   }
 }//end of driver objecct
 

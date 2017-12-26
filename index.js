@@ -4,30 +4,18 @@ let passengerId = 0
 let tripId = 0
 
 class Driver {
+// many trips, many passengers thru trips
   constructor(name) {
     this.id = ++driverId
     this.name = name
     store.drivers.push(this)
-  }//end of constructor
-
-  trips() {
-      return store.trips.filter(function(driver){
-        return driver === driver
-      })
   }
 
-  // trips(){
-  //   return store.trips.filter(trip => {
-  //     return trip.driverId == this.id;
-  //   });
-  // }
-  passengers(){
-    return this.trips().map(trip => {
-      console.log(trip.passenger())
-    })
-  }
-
-}//end of driver objecct
+  trips(){
+    return store.trips.filter(trip => {
+      return trip.driverId == this.id;
+    });
+  }//end of driver objecct
 
 class Passenger {
   constructor(name) {

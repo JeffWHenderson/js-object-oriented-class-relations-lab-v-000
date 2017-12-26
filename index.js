@@ -11,7 +11,6 @@ class Driver {
   }//end of constructor
 
   trips() {
-    console.log(this.id)
     console.log(
       store.trips.filter(function(driver){
         driver === driver

@@ -9,6 +9,12 @@ class Driver {
     this.name = name
     store.drivers.push(this)
   }//end of constructor
+
+  trips() {
+    return store.trips.filter(function(driver.id){
+      
+    })
+  }
 }//end of driver objecct
 
 class Passenger {

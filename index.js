@@ -37,8 +37,5 @@ class Trip {
     return store.passengers.find(function(passengerId){
       return passengerId
     })
-    // return store.passengers.find(function(passengerId){
-    //   return passengerId
-    // })
   }
 } // end of Trip Object

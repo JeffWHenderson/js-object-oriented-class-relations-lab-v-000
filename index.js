@@ -11,21 +11,16 @@ class Driver {
   }//end of constructor
 
   trips() {
-    //console.log(
       return store.trips.filter(function(driver){
         return driver === driver
       })
   }
-
-  passengers() {
-    this.trips().find(function(driver){
-      driver === driver
-      return passengerId
-    })
-    return this.trips().find(function(passenger){
-      return passengerId === passengerId
-    })
+  passengers(){
+    return this.trips().map(function(trip) {
+      return trip.passenger();
+    });
   }
+
 }//end of driver objecct
 
 class Passenger {
@@ -43,13 +38,11 @@ class Trip {
     this.passengerId = passenger.id
     store.trips.push(this)
   }
-
   driver() {
     return store.drivers.find(function(driverId){
       return driverId
     })
   }
-
   passenger() {
     return store.passengers.find(function(passengerId){
       return passengerId

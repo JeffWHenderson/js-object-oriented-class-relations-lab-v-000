@@ -28,5 +28,7 @@ class Trip {
     store.trips.push(this)
   }
 
-  //driverId() =  this.driver.id
+  driverId() {
+    
+  }
 } // end of Trip Object
